@@ -1,6 +1,8 @@
 # pixel-art-display
 Pixel art display em Python
-![display](display.png "display")
+
+<img src="display.png" width="50%">
+<br>
 
 # Instalação
 ```pip install -r requirements.txt```
