@@ -10,20 +10,21 @@ def main(fullscreen, files):
 	run(files, fullscreen)
 
 
+def listen():
+	""" quit the window when user presses the red x button of the window """
+	return [pygame.quit() for event in pygame.event.get() if event.type == pygame.QUIT]
+
+
 def run(files, fullscreen):
 	pygame.init()
 	width, height = 650, 750
 	window = pygame.display.set_mode((width, height))
 
-	def listen():
-		""" quit the window when user presses the red x button of the window """
-		return [pygame.quit() for event in pygame.event.get() if event.type == pygame.QUIT]
-
 	image_tv = pygame.image.load("tv.png")
 	image_tv = pygame.transform.scale(image_tv, (width, height))
 	image_sprite = []
-	for file in files:
 
+	for file in files:
 		image = pygame.image.load(file)
 		if fullscreen:
 			image = pygame.transform.scale(image, (560, 560))
@@ -33,6 +34,7 @@ def run(files, fullscreen):
 
 	clock = pygame.time.Clock()
 	value = 0
+
 	while True:
 		clock.tick(4)
 		listen()
@@ -47,7 +49,6 @@ def run(files, fullscreen):
 			y = 50
 		window.blit(image, (x, y))
 		window.blit(image_tv, (0, 0))
-
 		pygame.display.update()
 
 		# Filling the window with black color
