@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "22bac6c40fdbef13b92d1cd50d02684eab4199a46e969f4742c94271cffb5795"
+            "sha256": "d395f5c66908435a135e7ad40c968ba245b65f70626a5125a31e88ac57848b25"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,14 +31,6 @@
             ],
             "markers": "platform_system == 'Windows'",
             "version": "==0.4.6"
-        },
-        "pyanimation": {
-            "hashes": [
-                "sha256:666fe8a50060ae855688da11b3ce4ed4c781cf2e6a7ba3586098022cf819a8c2",
-                "sha256:fe076fc8b2db235c75a9d3ba7df237984c5211e4a8788cf4c8bf656de8e39fe2"
-            ],
-            "index": "pypi",
-            "version": "==0.7"
         },
         "pygame": {
             "hashes": [
@@ -111,7 +103,7 @@
                 "sha256:fa18acc2d6f0d09575802e1db11845fc0f83f9777cc385c51380125df92f3dc9",
                 "sha256:fab0457ab07e8abb99de2b83c0a71f98bdf79afb01ff611873e4333fd8649f02"
             ],
-            "markers": "python_version >= '3.6'",
+            "index": "pypi",
             "version": "==2.3.0"
         }
     },
